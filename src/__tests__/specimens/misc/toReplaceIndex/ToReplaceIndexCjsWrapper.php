@@ -82,6 +82,14 @@ class ToReplaceSecondCjsWrapper extends CJSModule {
         return $this->_impl->getTest5($test, $test2, ...$args);
     }
 
+    /**
+     * @param string[] ...$args
+     * @return string
+     */
+    public function classNames(...$args) {
+        return \specimens\ToReplaceSecond::classNames(...$args);
+    }
+
     private function __construct() {
         $this->_impl = new \specimens\ToReplaceSecond();
     }

@@ -61,4 +61,12 @@ class ToReplaceSecond {
     public static function getBar($test) {
         return $test . $test;
     }
+
+    /**
+     * @param string[] ...$args
+     * @return string
+     */
+    public static function classNames(...$args) {
+        return implode(' ', $args);
+    }
 }
